@@ -1,7 +1,6 @@
 package com.example.main;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 
 class RatingCompare implements Comparator<Movie>{
@@ -28,10 +27,16 @@ public class ComparatorExample {
         list.add(new Movie("Race 3", 3.3, 2022));
         list.add(new Movie("Breaking Bad", 9.3, 2010));
         list.add(new Movie("Pathan", 6.3, 2023));
+        list.add(new Movie("Dilwale", 7.3, 2015));
+        list.add(new Movie("Force Awakens", 8.3, 2015));
+        list.add(new Movie("Star Wars", 8.7, 1977));
+        list.add(new Movie("Empire Strikes Back", 8.8, 1980));
+        list.add(new Movie("Return of the Jedi", 8.4, 1983));
+
 
         RatingCompare ratingCompare = new RatingCompare();
-        Collections.sort(list, ratingCompare);
-        System.out.println("Movies after sorting : ");
+        list.sort(ratingCompare);
+        System.out.println("Movies after sorting Rating : ");
         for (Movie movie : list) {
             System.out.println(movie.getName() + " " +
                     movie.getRating() + " " +
@@ -39,8 +44,8 @@ public class ComparatorExample {
         }
 
         NameCompare nameCompare = new NameCompare();
-        Collections.sort(list, nameCompare);
-        System.out.println("Movies after sorting : ");
+        list.sort(nameCompare);
+        System.out.println("Movies after sorting Name: ");
         for (Movie movie : list) {
             System.out.println(movie.getName() + " " +
                     movie.getRating() + " " +
