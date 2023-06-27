@@ -10,5 +10,6 @@ public class DeveloperClient {
         Employee employee2=EmployeeFactoryClass.getEmployee("Web Developer");
         System.out.println(employee2);
         System.out.println("Salary:"+employee2.Salary());
+
     }
 }
