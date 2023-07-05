@@ -10,7 +10,5 @@ public class Main {
 
         NetworkConnection networkConnection1 = networkConnection.clone();
         System.out.println(networkConnection1);
-
-
     }
 }
