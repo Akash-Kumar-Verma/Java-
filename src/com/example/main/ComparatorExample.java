@@ -15,6 +15,7 @@ class RatingCompare implements Comparator<Movie>{
             return 0;
     }
 }
+//for Comparing the value based on name
 class NameCompare implements Comparator<Movie>{
     @Override
     public int compare(Movie o1, Movie o2) {
