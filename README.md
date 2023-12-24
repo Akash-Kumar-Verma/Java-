@@ -1,1 +1,1 @@
-This repo is contains code from java concepts
+This repo contains code from java concepts
