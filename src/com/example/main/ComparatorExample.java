@@ -35,6 +35,8 @@ public class ComparatorExample {
 
 
         RatingCompare ratingCompare = new RatingCompare();
+
+        //pass the object of rating compare into list.sort
         list.sort(ratingCompare);
         System.out.println("Movies after sorting Rating : ");
         for (Movie movie : list) {
