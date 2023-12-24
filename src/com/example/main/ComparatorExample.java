@@ -45,7 +45,9 @@ public class ComparatorExample {
                     movie.getYear());
         }
 
+        //creating the object of name compare class
         NameCompare nameCompare = new NameCompare();
+        //pass the object of name compare into list.sort
         list.sort(nameCompare);
         System.out.println("Movies after sorting Name: ");
         for (Movie movie : list) {
